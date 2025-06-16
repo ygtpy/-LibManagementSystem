@@ -1,36 +1,44 @@
-# Build results
-bin/
-obj/
-*.exe
-*.dll
-*.pdb
-
-# Visual Studio files
-.vscode/
-*.user
+# Visual Studio
+.vs/
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
-# OS junk
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+# Build Results
+bin/
+obj/
 
-# Rider/JetBrains
-.idea/
-*.sln.iml
-
-# NuGet
-*.nupkg
-*.snupkg
-packages/
-
-# Logs
+# Copilot / IntelliSense / Cache dosyaları
+*.db
+*.cache
+*.vsidx
 *.log
+*.json
+*.vscode/
 
-# Publish output
-publish/
+# Others
+*.tmp
+*.bak
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Configuration
-appsettings.*.json
+# Build Results
+bin/
+obj/
+
+# Copilot / IntelliSense / Cache dosyaları
+*.db
+*.cache
+*.vsidx
+*.log
+*.json
+*.vscode/
+
+# Others
+*.tmp
+*.bak
