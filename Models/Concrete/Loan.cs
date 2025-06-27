@@ -32,7 +32,7 @@ namespace LibraryManagementSystem.Models.Concrete
             if (!IsOverdue) return 0;
 
             var overdueDays = (DateTime.Now - DueDate).Days;
-            return overdueDays * 0.50m; // Gecikme başına 0.50 TL ceza
+            return overdueDays * 5.50m; // Gecikme başına 5.50 TL ceza
         }
     }
 }
