@@ -25,6 +25,6 @@ namespace LibraryManagementSystem.Models.Concrete
             Console.WriteLine($"Book: {Title} by {Author?.FullName} - Status: {Status}");
         }
 
-        public bool IsAvalible => Status == BookStatus.Available;
+        public bool IsAvailable => Status == BookStatus.Available;
     }
 }

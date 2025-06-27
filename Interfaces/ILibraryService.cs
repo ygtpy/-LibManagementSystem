@@ -9,21 +9,20 @@ namespace LibraryManagementSystem.Interfaces
 {
     public interface ILibraryService
     {
-        // Book Operations
+        // Kitap İşlemleri
         Task<Book> AddBookAsync(Book book);
-        Task<List<Book>> GetAvailableBookAsync();
+        Task<List<Book>> GetAvailableBookAsync();      
         Task<List<Book>> SearchBookAsync(string searchTerm);
 
-        // Member Operations
-        Task <Member> RegisterMemberAsync(Member member);
+        // Üye İşlemleri
+        Task<Member> RegisterMemberAsync(Member member);
         Task<Member> GetMemberByNumberAsync(string membershipNumber);
 
-        // Loan Operations
-        Task<Loan> BorrowBookAsync(string memebershipNumber, int bookId);
+        // Kredi İşlemleri
+        Task<Loan> BorrowBookAsync(string membershipNumber, int bookId);  
         Task<Loan> ReturnBookAsync(int loanId);
         Task<List<Loan>> GetOverdueLoanAsync();
-
-        // Reports
+        // Raporlar
         Task<Dictionary<string, int>> GetBookStatisticsAsync();
     }
 }

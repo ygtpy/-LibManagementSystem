@@ -15,8 +15,9 @@ namespace LibraryManagementSystem.Repositories
         public override async Task<List<Member>> SearchAsync(string searchTerm)
         {
             return _entities.Where(m => m.IsActive &&
-                (m.FullName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                (m.FirstName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
                  m.LastName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                 m.FullName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||  
                  m.MembershipNumber.Contains(searchTerm) ||
                  m.Email.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)))
                 .ToList();
