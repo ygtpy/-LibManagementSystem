@@ -7,7 +7,7 @@ using LibraryManagementSystem.Utilities;
 using System.Linq;
 
 
-class Program
+partial class Program
 {
     private static LibraryService _libraryService;
 
